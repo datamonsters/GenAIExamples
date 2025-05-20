@@ -1,14 +1,14 @@
 # Copyright (C) 2025 Advanced Micro Devices, Inc.
+
+image:
+  repository: datamonsterscom/docsum
+  tag: latest
+imagePullSecrets:
+  - name: regcred
+
 whisper:
   image:
     repository: datamonsterscom/whisper
-    tag: latest
-  imagePullSecrets:
-    - name: regcred
-
-docsum:
-  image:
-    repository: datamonsterscom/docsum
     tag: latest
   imagePullSecrets:
     - name: regcred
