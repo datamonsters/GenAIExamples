@@ -3,13 +3,15 @@ whisper:
   image:
     repository: datamonsterscom/whisper
     tag: latest
-  imagePullSecrets: regcred
+  imagePullSecrets:
+    - name: regcred
 
 docsum:
   image:
     repository: datamonsterscom/docsum
     tag: latest
-  imagePullSecrets: regcred
+  imagePullSecrets:
+    - name: regcred
 
 tgi:
   enabled: false
@@ -18,7 +20,8 @@ llm-uservice:
   image:
     repository: datamonsterscom/llm-docsum
     tag: latest
-  imagePullSecrets: regcred
+  imagePullSecrets:
+    - name: regcred
   DOCSUM_BACKEND: "vLLM"
   retryTimeoutSeconds: 720
 
@@ -26,7 +29,8 @@ docsum-ui:
   image:
     repository: datamonsterscom/docsum-gradio-ui
     tag: latest
-  imagePullSecrets: regcred
+  imagePullSecrets:
+    - name: regcred
 
 vllm:
   enabled: true
@@ -34,7 +38,8 @@ vllm:
   image:
     repository: datamonsterscom/vllm-rocm
     tag: latest
-  imagePullSecrets: regcred
+  imagePullSecrets:
+    - name: regcred
   env:
     HIP_VISIBLE_DEVICES: "0"
     TENSOR_PARALLEL_SIZE: "1"
