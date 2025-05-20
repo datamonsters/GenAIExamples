@@ -1,17 +1,34 @@
 # Copyright (C) 2025 Advanced Micro Devices, Inc.
+whisper:
+  image:
+    repository: datamonsterscom/whisper
+    tag: latest
+
+docsum:
+  image:
+    repository: datamonsterscom/docsum
+    tag: latest
 
 tgi:
   enabled: false
 
 llm-uservice:
+  image:
+    repository: datamonsterscom/llm-docsum
+    tag: latest
   DOCSUM_BACKEND: "vLLM"
   retryTimeoutSeconds: 720
+
+docsum-ui:
+  image:
+    repository: datamonsterscom/docsum-gradio-ui
+    tag: latest
 
 vllm:
   enabled: true
   accelDevice: "rocm"
   image:
-    repository: opea/vllm-rocm
+    repository: datamonsterscom/vllm-rocm
     tag: latest
   env:
     HIP_VISIBLE_DEVICES: "0"
