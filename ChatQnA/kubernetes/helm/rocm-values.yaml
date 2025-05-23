@@ -14,7 +14,7 @@ chatqna:
 
 chatqna-ui:
   image:
-    repository: datamonsterscom/chatqna
+    repository: datamonsterscom/chatqna-ui
     tag: latest
 
 data-prep:
