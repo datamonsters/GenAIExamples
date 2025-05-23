@@ -17,7 +17,7 @@ chatqna-ui:
     repository: datamonsterscom/chatqna
     tag: latest
 
-dataprep:
+data-prep:
   image:
     repository: datamonsterscom/dataprep
     tag: latest
@@ -27,7 +27,7 @@ nginx:
     repository: datamonsterscom/nginx
     tag: latest
 
-retriever:
+retriever-usvc:
   image:
     repository: datamonsterscom/retriever
     tag: latest
