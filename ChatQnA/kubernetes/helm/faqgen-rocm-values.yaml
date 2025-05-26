@@ -1,17 +1,16 @@
 # Copyright (C) 2025 Intel Corporation
 # SPDX-License-Identifier: Apache-2.0
 
-chatqna:
+image:
+  repository: datamonsterscom/chatqna
+  tag: latest
+
+ui:
   image:
-    repository: datamonsterscom/chatqna
+    repository: datamonsterscom/chatqna-ui
     tag: latest
 
-chatqna-ui:
-  image:
-    repository: datamonsterscom/chatqna
-    tag: latest
-
-dataprep:
+data-prep:
   image:
     repository: datamonsterscom/dataprep
     tag: latest
@@ -21,7 +20,7 @@ nginx:
     repository: datamonsterscom/nginx
     tag: latest
 
-retriever:
+retriever-usvc:
   image:
     repository: datamonsterscom/retriever
     tag: latest
