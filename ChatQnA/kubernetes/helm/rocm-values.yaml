@@ -11,7 +11,7 @@ image:
   repository: datamonsterscom/chatqna
   tag: latest
 
-ui:
+chatqna-ui:
   image:
     repository: datamonsterscom/chatqna-ui
     tag: latest
